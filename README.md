@@ -16,11 +16,11 @@ python ./tools/train.py
 ## Cite
 If you find our work useful in your research or publication, please cite our work:
 ```
-@ARTICLE{9423517,
+@article{yang2021mutual,
+  title={Mutual-Prototype Adaptation for Cross-Domain Polyp Segmentation},
   author={Yang, Chen and Guo, Xiaoqing and Zhu, Meilu and Ibragimov, Bulat and Yuan, Yixuan},
-  journal={IEEE Journal of Biomedical and Health Informatics}, 
-  title={Mutual-Prototype Adaptation for Cross-Domain Polyp Segmentation}, 
+  journal={IEEE Journal of Biomedical and Health Informatics},
   year={2021},
-  pages={1-1},
-  doi={10.1109/JBHI.2021.3077271}}
+  publisher={IEEE}
+}
 ```
