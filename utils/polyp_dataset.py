@@ -134,7 +134,7 @@ class Polyp(Dataset):
         return len(self.files)
 
 if __name__ == '__main__':
-    Source_data = Polyp(root='/home/cyang/SFDA/data/EndoScene', data_dir='/home/cyang/SFDA/dataset/EndoScene_list/train.lst', mode='train', max_iter=15000)
+    Source_data = Polyp(root='/home/cyang/SFDA/data/EndoScene', data_dir='/home/cyang/MPA-DA/dataset/EndoScene_list/train.lst', mode='train', max_iter=15000)
     print(Source_data.__len__())
     train_loader = torch.utils.data.DataLoader(Source_data, batch_size=8, shuffle=True, num_workers=4)
     print(np.max(Source_data[0][0]['image']), np.min(Source_data[0][0]['image']))
