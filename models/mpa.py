@@ -294,13 +294,13 @@ class ResNet(nn.Module):
                 {'params': self.get_10x_lr_params(), 'lr': 10 * args.learning_rate}]
 
 
-def Res_Deeplab(num_classes=21):
+def MPA_model(num_classes=21):
     model = ResNet(Bottleneck, [3, 4, 23, 3], num_classes)
     return model
 
 
 if __name__ == '__main__':
-    model = Res_Deeplab(num_classes=1)
+    model = MPA_model(num_classes=1)
     s = torch.randn(1, 3, 256, 256)
     t = torch.randn(1, 3, 256, 256)
     coarse_s, fine_s, coarse_t, fine_t = model(s, t)
