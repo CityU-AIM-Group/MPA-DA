@@ -121,10 +121,8 @@ def test(model, dataloader, args, adabn_loader=False):
             img = Variable(img).cuda()
             gt = Variable(gt).cuda()
             gt = gt.unsqueeze(1)
-            if args.is_contrast:
-                _, output = model(img)
-            else:
-                output = model(img)
+            
+            _, _, _, output = model(img, img)
             if args.save_result:
                 prediction = (output >= 0.5).float()
                 prediction = tensor_to_PIL(prediction)
