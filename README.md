@@ -3,8 +3,8 @@ This repository is an official PyTorch implementation of the paper "Mutual-Proto
 ![](figs/framework.png)
 
 ## Dependencies
-* Python 3.7
-* Pytorch >= 1.5.0
+* python 3.7
+* pytorch >= 1.5.0
 * numpy
 * pillow
 
