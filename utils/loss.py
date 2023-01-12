@@ -105,3 +105,19 @@ class MaxSquareloss(nn.Module):
         #mask = (prob != self.ignore_index)    
         loss = -torch.mean(torch.pow(prob, 2) + torch.pow(1-prob, 2)) / 2
         return loss
+    
+"""Uncertainty loss"""
+def uncertainty(labels, pred1, pred2):
+        criterion = nn.CrossEntropyLoss(reduction = 'none')
+        kl_distance = nn.KLDivLoss( reduction = 'none')
+        sm = torch.nn.Softmax(dim = 1)
+        log_sm = torch.nn.LogSoftmax(dim = 1)
+        loss = criterion(pred1, labels)
+
+        mean = (pred1 + pred2) / 2
+
+        variance = (torch.sum(kl_distance(log_sm(mean), sm(pred2)), dim=1) + torch.sum(kl_distance(log_sm(mean), sm(pred1)), dim=1)) / 2
+        exp_variance = 1/ (variance + 1)
+
+        loss = torch.mean(loss*exp_variance) + torch.mean(variance)
+        return loss
