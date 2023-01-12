@@ -9,7 +9,7 @@ This repository is an official PyTorch implementation of the paper "Mutual-Proto
 * pillow
 
 ## Data
-You can download all datasets used in the paper from [here](https://1drv.ms/u/s!AtBnuAhBSAqjdxW_5OEE9aj_H9Y?e=EBrgmM](https://1drv.ms/u/s!AtBnuAhBSAqjdjpLjYOq_geB1f4?e=KlPnBB). 
+You can download all datasets used in the paper from [here](https://1drv.ms/u/s!AtBnuAhBSAqjdjpLjYOq_geB1f4?e=zChYcN). 
 ## Quickstart
 ```
 python ./tools/train.py
