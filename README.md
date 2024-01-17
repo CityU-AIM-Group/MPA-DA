@@ -1,8 +1,16 @@
 # Mutual-Prototype Adaptation for Cross-Domain Polyp Segmentation (JBHI 2021)
 
 
-This is the official PyTorch implementation of **MPA** (Mutual-Prototype Adaptation) (JBHI 2021). [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9423517) from JBHI 2021.
-![](figs/framework.png)
+This is the official PyTorch implementation of **MPA** (Mutual-Prototype Adaptation) (JBHI 2021). 
+
+**Mutual-Prototype Adaptation for Cross-Domain Polyp Segmentation**[\[Paper\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9423517)
+
+Chen Yang, Xiaoqing Guo, Meilu Zhu, Bulat Ibragimov, Yixuan Yuan
+
+<div align="center">
+  <img src="figs/framework.png"/>
+</div>
+
 
 ## Dependencies
 * python 3.7
