@@ -1,5 +1,7 @@
-# MPA-DA
-This repository is an official PyTorch implementation of the paper "Mutual-Prototype Adaptation for Cross-Domain Polyp Segmentation" [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9423517) from JBHI 2021.
+# Mutual-Prototype Adaptation for Cross-Domain Polyp Segmentation (JBHI 2021)
+
+
+This is the official PyTorch implementation of **MPA** (Mutual-Prototype Adaptation) (JBHI 2021). [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9423517) from JBHI 2021.
 ![](figs/framework.png)
 
 ## Dependencies
